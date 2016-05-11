@@ -1,0 +1,29 @@
+{
+    "name": "chiquitto/soul",
+    "description": "Core for php system",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Alisson Chiquitto",
+            "email": "chiquitto@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Soul\\": "src/"
+        },
+        "files": [
+            "config.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SoulTest\\": "tests/"
+        }
+    },
+    "minimum-stability": "stable",
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "5.3.*"
+    }
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="./phpunit-bootstrap.php" colors="true">
+    <testsuite name="Testes">
+        <directory>./tests</directory>
+    </testsuite>
+    <filter>
+        <whitelist>
+            <directory suffix=".php">./src</directory>
+            <!--<exclude>
+                <directory suffix=".php">./</directory>
+            </exclude>-->
+        </whitelist>
+        
+        <blacklist>
+            <directory suffix=".php">./vendor</directory>
+            <!--<file>/path/to/file</file>-->
+            <!--<exclude>
+                <directory suffix=".php">/path/to/files</directory>
+                <file>/path/to/file</file>
+            </exclude>-->
+        </blacklist>
+    </filter>
+    
+    <logging>
+        <log type="coverage-html" target="tmp/phpunit/_reports/coverage" title="Soul" charset="UTF-8" yui="true" highlight="true" lowUpperBound="45" highLowerBound="90"/>
+        <!--<log type="coverage-clover" target="_reports/logs/clover.xml"/>-->
+        <!--<log type="junit" target="_reports/logs/junit.xml" logIncompleteSkipped="false"/>-->
+        <!--<log type="testdox-text" target="_reports/testdox/executed.txt"/>-->
+    </logging>
+</phpunit>

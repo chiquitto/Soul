@@ -1,8 +1,10 @@
 <?php
 
-namespace DinaZend\Model\Vo;
+namespace Soul\Model\Vo;
 
 use Iterator;
+use Soul\Model\Vo\Item;
+use Soul\Model\Vo\ValidatorItemset;
 
 /**
  * Description of Itemset
@@ -41,7 +43,7 @@ abstract class Itemset implements Iterator
         $var = key($this->itens);
         return $var;
     }
-    
+
     /**
      * 
      * @return Item|null
@@ -68,19 +70,20 @@ abstract class Itemset implements Iterator
         $this->itens[] = $item;
         $this->count++;
     }
-    
+
     public function addIndexed(Item $item, $id)
     {
         $this->itensIndexed[$id] = $item;
         $this->add($item);
     }
-    
+
     /**
      * 
      * @param string|int $id
      * @return Item|null
      */
-    public function getById($id) {
+    public function getById($id)
+    {
         return isset($this->itensIndexed[$id]) ? $this->itensIndexed[$id] : null;
     }
 
@@ -106,7 +109,7 @@ abstract class Itemset implements Iterator
     {
         return $this->count;
     }
-    
+
     /**
      * 
      * @param int $type
@@ -123,12 +126,13 @@ abstract class Itemset implements Iterator
 
         return $r;
     }
-    
+
     /**
      * 
      * @return ValidatorItemset
      */
-    public function newValidateItemset() {
+    public function newValidateItemset()
+    {
         return new ValidatorItemset();
     }
 

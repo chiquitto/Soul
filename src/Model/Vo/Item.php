@@ -1,8 +1,8 @@
 <?php
 
-namespace DinaZend\Model\Vo;
+namespace Soul\Model\Vo;
 
-use DinaZend\Exception\InvalidArgumentException;
+use Soul\Exception\InvalidArgumentException;
 use Exception;
 use Iterator;
 use stdClass;
