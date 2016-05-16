@@ -8,7 +8,7 @@ namespace Soul\Db\Adapter;
  * @author Alisson Chiquitto <chiquitto@chiquitto.com.br>
  * @codeCoverageIgnore
  */
-class AdapterWrite extends Adapter implements AdapterInterface {
+class AdapterWrite extends Adapter {
 
     public function beginTransaction() {
         $this->getDriver()->getConnection()->beginTransaction();

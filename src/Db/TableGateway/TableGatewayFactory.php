@@ -15,9 +15,11 @@ use Soul\Util\ServiceLocatorFactory;
 class TableGatewayFactory
 {
 
+    const MODE_DDL = 'DDL';
     const MODE_READ = 'READ';
     const MODE_WRITE = 'WRITE';
 
+    protected static $defaultAdapterDdl;
     protected static $defaultAdapterRead;
     protected static $defaultAdapterWrite;
     protected static $pkName = array();
@@ -109,9 +111,19 @@ class TableGatewayFactory
     {
         if ($method == self::MODE_WRITE) {
             return self::getDefaultDbAdapterWrite();
+        } elseif ($method == self::MODE_DDL) {
+            return self::getDefaultDbAdapterDdl();
         }
 
         return self::getDefaultDbAdapterRead();
+    }
+    
+    public static function getDefaultDbAdapterDdl()
+    {
+        if (!self::$defaultAdapterDdl) {
+            self::$defaultAdapterDdl = ServiceLocatorFactory::getInstance()->get('Zend\Db\Adapter\AdapterDdl');
+        }
+        return self::$defaultAdapterDdl;
     }
 
     /**
@@ -135,7 +147,6 @@ class TableGatewayFactory
     public static function getDefaultDbAdapterWrite()
     {
         if (!self::$defaultAdapterWrite) {
-            // self::$defaultAdapterWrite = ServiceLocatorFactory::getInstance()->get('Zend\Db\Adapter\AdapterWrite');
             self::$defaultAdapterWrite = ServiceLocatorFactory::getInstance()->get('Zend\Db\Adapter\AdapterWrite');
         }
         return self::$defaultAdapterWrite;
