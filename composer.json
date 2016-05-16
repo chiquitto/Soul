@@ -22,7 +22,10 @@
         }
     },
     "minimum-stability": "stable",
-    "require": {},
+    "require": {
+        "zendframework/zend-db": "^2.5",
+        "zendframework/zend-servicemanager": "^3"
+    },
     "require-dev": {
         "phpunit/phpunit": "5.3.*"
     }

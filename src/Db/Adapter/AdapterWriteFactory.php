@@ -2,27 +2,31 @@
 
 namespace Soul\Db\Adapter;
 
-use Zend\ServiceManager\ServiceLocatorInterface;
+use Interop\Container\ContainerInterface;
+use Soul\Db\Adapter\Adapter;
+use Zend\ServiceManager\Factory\FactoryInterface;
 
 /**
- * Description of ProfilingAdapterFactory
- *
- * @author Alisson Chiquitto <chiquitto@chiquitto.com.br>
- * @link https://zf2-docs.readthedocs.org/en/latest/modules/zend.log.writers.html
- * @return AdapterWrite
+ * Description of ProfilingAdapterFactory 
+ * 
+ * @author Alisson Chiquitto <chiquitto@chiquitto.com.br> 
+ * @link https://zf2-docs.readthedocs.org/en/latest/modules/zend.log.writers.html 
+ * @return Adapter 
  */
-class AdapterWriteFactory extends AdapterFactory {
-    
-    public function createService(ServiceLocatorInterface $serviceLocator) {
-        $config = $serviceLocator->get('Configuration');
-        $dbParams = $config['db'];
+class AdapterWriteFactory implements FactoryInterface
+{
 
-        if ($config['dinazendDbProfiler']) {
-            return new ProfilingWriteAdapter($dbParams);
+    public function __invoke(ContainerInterface $container, $requestedName, array $options = null)
+    {
+        $config = $container->get('Configuration');
+        $dbParams = $config['dbw'];
+
+        if (isset($config['dinazendDbProfiler'])) {
+            return new ProfilingAdapter($dbParams);
         } else {
-            // @codeCoverageIgnoreStart
-            return new Adapter($dbParams);
-            // @codeCoverageIgnoreEnd
+            // @codeCoverageIgnoreStart 
+            return new AdapterWrite($dbParams);
+            // @codeCoverageIgnoreEnd 
         }
     }
 

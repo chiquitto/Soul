@@ -2,7 +2,7 @@
 
 namespace Soul\Db\Adapter;
 
-use Exception;
+use Soul\Exception\Exception;
 use Zend\Db\Adapter\Adapter as ZendAdapter;
 use Zend\Db\Adapter\Platform\PlatformInterface;
 use Zend\Db\Adapter\Profiler\ProfilerInterface;
@@ -18,8 +18,6 @@ class Adapter extends ZendAdapter implements AdapterInterface {
 
     public function __construct($driver, PlatformInterface $platform = null, ResultSetInterface $queryResultPrototype = null, ProfilerInterface $profiler = null) {
         parent::__construct($driver, $platform, $queryResultPrototype, $profiler);
-
-        // $this->detectProfiler();
     }
 
     public function beginTransaction() {
