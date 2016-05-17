@@ -5,7 +5,7 @@
  * @link https://github.com/fezfez/ServiceLocatorFactory/blob/master/src/ServiceLocatorFactory/ServiceLocatorFactory.php
  */
 
-namespace Soul\Util;
+namespace Chiquitto\Soul\Util;
 
 use Exception;
 use Zend\Mvc\Application;

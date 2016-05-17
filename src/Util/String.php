@@ -1,6 +1,6 @@
 <?php
 
-namespace Soul\Util;
+namespace Chiquitto\Soul\Util;
 
 /**
  * Description of String

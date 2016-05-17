@@ -1,10 +1,10 @@
 <?php
 
-namespace Soul\Db\TableGateway;
+namespace Chiquitto\Soul\Db\TableGateway;
 
 use ArrayObject;
 use Closure;
-use Soul\Db\Adapter\Adapter;
+use Chiquitto\Soul\Db\Adapter\Adapter;
 use Exception;
 use Zend\Db\Adapter\AdapterInterface;
 use Zend\Db\Sql\Predicate\Expression;

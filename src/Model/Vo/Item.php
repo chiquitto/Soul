@@ -1,8 +1,8 @@
 <?php
 
-namespace Soul\Model\Vo;
+namespace Chiquitto\Soul\Model\Vo;
 
-use Soul\Exception\InvalidArgumentException;
+use Chiquitto\Soul\Exception\InvalidArgumentException;
 use Exception;
 use Iterator;
 use stdClass;

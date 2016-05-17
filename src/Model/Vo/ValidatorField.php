@@ -1,6 +1,6 @@
 <?php
 
-namespace Soul\Model\Vo;
+namespace Chiquitto\Soul\Model\Vo;
 
 use Zend\Validator\ValidatorChain;
 use Zend\Validator\ValidatorInterface;

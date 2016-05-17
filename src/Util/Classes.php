@@ -1,6 +1,6 @@
 <?php
 
-namespace Soul\Util;
+namespace Chiquitto\Soul\Util;
 
 /**
  * Description of Classes
@@ -11,7 +11,7 @@ class Classes {
 
     /**
      * Return the short class name (Name without namespace)
-     * Ex.: shortName(Soul\Util\Classes) => Classes
+     * Ex.: shortName(Chiquitto\Soul\Util\Classes) => Classes
      * 
      * @link http://php.net/manual/pt_BR/function.get-class.php
      * @param string $classname

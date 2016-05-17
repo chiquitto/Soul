@@ -1,6 +1,6 @@
 <?php
 
-namespace Soul\Db\ResultSet;
+namespace Chiquitto\Soul\Db\ResultSet;
 
 use Zend\Db\ResultSet\ResultSet as ZendResultSet;
 

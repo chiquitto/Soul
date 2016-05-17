@@ -1,6 +1,6 @@
 <?php
 
-namespace Soul\Test;
+namespace Chiquitto\Soul\Test;
 
 use PHPUnit_Framework_TestCase;
 use ReflectionClass;

@@ -1,8 +1,8 @@
 <?php
 
-namespace Soul\Model\Vo;
+namespace Chiquitto\Soul\Model\Vo;
 
-use Soul\Exception\InvalidInputException;
+use Chiquitto\Soul\Exception\InvalidInputException;
 use Zend\Validator\ValidatorChain;
 
 /**

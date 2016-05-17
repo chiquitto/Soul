@@ -10,7 +10,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Soul\\": "src/"
+            "Chiquitto\\Soul\\": "src/"
         },
         "files": [
             "config.php"
@@ -18,7 +18,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "SoulTest\\": "tests/"
+            "Chiquitto\\SoulTest\\": "tests/"
         }
     },
     "minimum-stability": "stable",

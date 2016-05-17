@@ -1,19 +1,19 @@
 <?php
 
-namespace SoulTest\Model\Vo;
+namespace Chiquitto\SoulTest\Model\Vo;
 
 use ArrayIterator;
 use Iterator;
 use PHPUnit_Framework_Error_Notice;
-use Soul\Exception\Exception;
-use Soul\Exception\InvalidArgumentException;
-use Soul\Model\Vo\Item;
-use Soul\Model\Vo\ValidatorItem;
-use Soul\Test\TestCase;
-use Soul\Util\String;
-use SoulTest\Classes\Model\Vo\Item1;
-use SoulTest\Classes\Model\Vo\Item2;
-use SoulTest\Classes\Model\Vo\Itemset1;
+use Chiquitto\Soul\Exception\Exception;
+use Chiquitto\Soul\Exception\InvalidArgumentException;
+use Chiquitto\Soul\Model\Vo\Item;
+use Chiquitto\Soul\Model\Vo\ValidatorItem;
+use Chiquitto\Soul\Test\TestCase;
+use Chiquitto\Soul\Util\String;
+use Chiquitto\SoulTest\Classes\Model\Vo\Item1;
+use Chiquitto\SoulTest\Classes\Model\Vo\Item2;
+use Chiquitto\SoulTest\Classes\Model\Vo\Itemset1;
 
 class ItemTest extends TestCase {
 

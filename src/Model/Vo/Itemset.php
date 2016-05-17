@@ -1,10 +1,10 @@
 <?php
 
-namespace Soul\Model\Vo;
+namespace Chiquitto\Soul\Model\Vo;
 
 use Iterator;
-use Soul\Model\Vo\Item;
-use Soul\Model\Vo\ValidatorItemset;
+use Chiquitto\Soul\Model\Vo\Item;
+use Chiquitto\Soul\Model\Vo\ValidatorItemset;
 
 /**
  * Description of Itemset

@@ -1,6 +1,6 @@
 <?php
 
-namespace Soul\Db\Adapter;
+namespace Chiquitto\Soul\Db\Adapter;
 
 use Zend\Db\Adapter\AdapterInterface as ZendAdapterInterface;
 

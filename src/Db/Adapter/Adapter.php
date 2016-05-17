@@ -1,8 +1,8 @@
 <?php
 
-namespace Soul\Db\Adapter;
+namespace Chiquitto\Soul\Db\Adapter;
 
-use Soul\Exception\Exception;
+use Chiquitto\Soul\Exception\Exception;
 use Zend\Db\Adapter\Adapter as ZendAdapter;
 use Zend\Db\Adapter\Platform\PlatformInterface;
 use Zend\Db\Adapter\Profiler\ProfilerInterface;

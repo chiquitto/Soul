@@ -1,6 +1,6 @@
 <?php
 
-namespace Soul\Db\TableGateway;
+namespace Chiquitto\Soul\Db\TableGateway;
 
 use Zend\Db\Adapter\AdapterInterface;
 use Zend\Db\ResultSet\ResultSetInterface;

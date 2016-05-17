@@ -1,6 +1,6 @@
 <?php
 
-namespace Soul\Exception;
+namespace Chiquitto\Soul\Exception;
 
 use Exception as PhpException;
 
@@ -17,7 +17,7 @@ class Exception extends PhpException {
     const INVALID_RETURN_DATATYPE = 1001;
 
     /**
-     * Lancado para dados que nao foram aprovados por \Soul\Model\Vo\ValidatorItem::isValid()
+     * Lancado para dados que nao foram aprovados por \Chiquitto\Soul\Model\Vo\ValidatorItem::isValid()
      */
     const INVALID_INPUT_VALIDATOR = 1002;
 
@@ -32,7 +32,7 @@ class Exception extends PhpException {
     const INVALID_DATA_USER = 1004;
     
     /**
-     * Lancado para dados que nao foram aprovados por \Soul\Model\Vo\ValidatorItemset::isValid()
+     * Lancado para dados que nao foram aprovados por \Chiquitto\Soul\Model\Vo\ValidatorItemset::isValid()
      */
     const INVALID_INPUT_VALIDATOR_SET = 1005;
 

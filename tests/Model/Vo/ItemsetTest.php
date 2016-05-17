@@ -1,11 +1,11 @@
 <?php
 
-namespace SoulTest\Model\Vo;
+namespace Chiquitto\SoulTest\Model\Vo;
 
-use Soul\Model\Vo\ValidatorItemset;
-use Soul\Test\TestCase;
-use SoulTest\Classes\Model\Vo\Item1;
-use SoulTest\Classes\Model\Vo\Itemset1;
+use Chiquitto\Soul\Model\Vo\ValidatorItemset;
+use Chiquitto\Soul\Test\TestCase;
+use Chiquitto\SoulTest\Classes\Model\Vo\Item1;
+use Chiquitto\SoulTest\Classes\Model\Vo\Itemset1;
 
 class ItemsetTest extends TestCase
 {

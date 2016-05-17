@@ -1,9 +1,9 @@
 <?php
 
-namespace Soul\Db\Adapter;
+namespace Chiquitto\Soul\Db\Adapter;
 
 use Interop\Container\ContainerInterface;
-use Soul\Db\Adapter\Adapter;
+use Chiquitto\Soul\Db\Adapter\Adapter;
 use Zend\ServiceManager\Factory\FactoryInterface;
 
 /**

@@ -1,14 +1,14 @@
 <?php
 
-namespace SoulTest\Exception;
+namespace Chiquitto\SoulTest\Exception;
 
-use Soul\Exception\Exception;
-use Soul\Exception\InvalidArgumentException;
-use Soul\Exception\InvalidDataUserException;
-use Soul\Exception\InvalidInputException;
-use Soul\Exception\InvalidInputsetException;
-use Soul\Exception\InvalidReturnDataTypeException;
-use Soul\Test\TestCase;
+use Chiquitto\Soul\Exception\Exception;
+use Chiquitto\Soul\Exception\InvalidArgumentException;
+use Chiquitto\Soul\Exception\InvalidDataUserException;
+use Chiquitto\Soul\Exception\InvalidInputException;
+use Chiquitto\Soul\Exception\InvalidInputsetException;
+use Chiquitto\Soul\Exception\InvalidReturnDataTypeException;
+use Chiquitto\Soul\Test\TestCase;
 
 class ExceptionTest extends TestCase {
 

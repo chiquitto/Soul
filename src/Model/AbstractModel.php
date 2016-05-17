@@ -1,6 +1,6 @@
 <?php
 
-namespace Soul\Model;
+namespace Chiquitto\Soul\Model;
 
 abstract class AbstractModel {
     

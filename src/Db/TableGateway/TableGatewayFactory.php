@@ -1,13 +1,13 @@
 <?php
 
-namespace Soul\Db\TableGateway;
+namespace Chiquitto\Soul\Db\TableGateway;
 
-use Soul\Db\Adapter\Adapter;
-use Soul\Db\Adapter\AdapterInterface;
-use Soul\Db\Adapter\AdapterWrite;
-use Soul\Db\ResultSet\ResultSet;
-use Soul\Exception\InvalidArgumentException;
-use Soul\Util\ServiceLocatorFactory;
+use Chiquitto\Soul\Db\Adapter\Adapter;
+use Chiquitto\Soul\Db\Adapter\AdapterInterface;
+use Chiquitto\Soul\Db\Adapter\AdapterWrite;
+use Chiquitto\Soul\Db\ResultSet\ResultSet;
+use Chiquitto\Soul\Exception\InvalidArgumentException;
+use Chiquitto\Soul\Util\ServiceLocatorFactory;
 
 /**
  * @codeCoverageIgnore

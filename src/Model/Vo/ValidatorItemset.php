@@ -1,10 +1,10 @@
 <?php
 
-namespace Soul\Model\Vo;
+namespace Chiquitto\Soul\Model\Vo;
 
-use Soul\Exception\InvalidInputException;
-use Soul\Exception\InvalidInputsetException;
-use Soul\Validator\Itemset\AbstractValidator;
+use Chiquitto\Soul\Exception\InvalidInputException;
+use Chiquitto\Soul\Exception\InvalidInputsetException;
+use Chiquitto\Soul\Validator\Itemset\AbstractValidator;
 use Zend\Validator\ValidatorChain;
 
 /**

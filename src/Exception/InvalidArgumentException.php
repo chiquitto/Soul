@@ -1,6 +1,6 @@
 <?php
 
-namespace Soul\Exception;
+namespace Chiquitto\Soul\Exception;
 
 /**
  * Lancado para parametros/valores de entrada invalidos de metodos

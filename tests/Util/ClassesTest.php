@@ -1,9 +1,9 @@
 <?php
 
-namespace SoulTest\Util;
+namespace Chiquitto\SoulTest\Util;
 
-use Soul\Test\TestCase;
-use Soul\Util\Classes;
+use Chiquitto\Soul\Test\TestCase;
+use Chiquitto\Soul\Util\Classes;
 
 /**
  * @author Alisson Chiquitto <chiquitto@chiquitto.com.br>

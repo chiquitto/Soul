@@ -1,9 +1,9 @@
 <?php
 
-namespace Soul\Exception;
+namespace Chiquitto\Soul\Exception;
 
 /**
- * Lancado para dados que nao foram aprovados por \Soul\Model\Vo\ValidatorItem::isValid()
+ * Lancado para dados que nao foram aprovados por \Chiquitto\Soul\Model\Vo\ValidatorItem::isValid()
  */
 class InvalidInputException extends Exception {
 

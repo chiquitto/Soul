@@ -1,6 +1,6 @@
 <?php
 
-namespace Soul\Exception;
+namespace Chiquitto\Soul\Exception;
 
 /**
  * Lancado quando dados que o usuario forneceu sao invalidos

@@ -1,9 +1,9 @@
 <?php
 
-namespace SoulTest\Util;
+namespace Chiquitto\SoulTest\Util;
 
-use Soul\Test\TestCase;
-use Soul\Util\String;
+use Chiquitto\Soul\Test\TestCase;
+use Chiquitto\Soul\Util\String;
 
 /**
  * Description of String
