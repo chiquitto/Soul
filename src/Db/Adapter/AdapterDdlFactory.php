@@ -21,11 +21,11 @@ class AdapterDdlFactory implements FactoryInterface
         $config = $container->get('Configuration');
         $dbParams = $config['dbddl'];
 
-        if (isset($config['dinazendDbProfiler'])) {
-            return new ProfilingAdapter($dbParams);
+        if (isset($dbParams['dbprofiler'])) {
+            return new ProfilingAdapterDdl($dbParams);
         } else {
             // @codeCoverageIgnoreStart 
-            return new Adapter($dbParams);
+            return new AdapterDdl($dbParams);
             // @codeCoverageIgnoreEnd 
         }
     }

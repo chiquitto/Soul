@@ -21,7 +21,7 @@ class AdapterFactory implements FactoryInterface
         $config = $container->get('Configuration');
         $dbParams = $config['dbr'];
 
-        if (isset($config['dinazendDbProfiler'])) {
+        if (isset($dbParams['dbprofiler'])) {
             return new ProfilingAdapter($dbParams);
         } else {
             // @codeCoverageIgnoreStart 

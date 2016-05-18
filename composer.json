@@ -24,9 +24,11 @@
     "minimum-stability": "stable",
     "require": {
         "zendframework/zend-db": "^2.5",
-        "zendframework/zend-servicemanager": "^3"
+        "zendframework/zend-servicemanager": "^3",
+        "zendframework/zend-validator": "^2.6"
     },
     "require-dev": {
-        "phpunit/phpunit": "5.3.*"
+        "phpunit/phpunit": "5.3.*",
+        "bjyoungblood/bjy-profiler": "@dev"
     }
 }

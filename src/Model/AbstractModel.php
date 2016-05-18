@@ -2,6 +2,7 @@
 
 namespace Chiquitto\Soul\Model;
 
-abstract class AbstractModel {
+abstract class AbstractModel
+{
     
 }

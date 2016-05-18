@@ -21,8 +21,8 @@ class AdapterWriteFactory implements FactoryInterface
         $config = $container->get('Configuration');
         $dbParams = $config['dbw'];
 
-        if (isset($config['dinazendDbProfiler'])) {
-            return new ProfilingAdapter($dbParams);
+        if (isset($dbParams['dbprofiler'])) {
+            return new ProfilingAdapterWrite($dbParams);
         } else {
             // @codeCoverageIgnoreStart 
             return new AdapterWrite($dbParams);
