@@ -44,13 +44,6 @@ class TableGateway extends ZendTableGateway {
         return parent::getAdapter();
     }
 
-    public function getDateTime2Bd($time = null) {
-        if ($time === null) {
-            $time = time();
-        }
-        return date('c', $time);
-    }
-
     /**
      * @link http://stackoverflow.com/questions/17447311/zendframework-2-select-max-of-a-column
      * @param type $column
@@ -72,6 +65,18 @@ class TableGateway extends ZendTableGateway {
         $row = $rowset->current();
 
         return $row->m;
+    }
+
+    /**
+     * 
+     * @param int $timestamp
+     * @return string
+     */
+    public function timestamp2Bd($timestamp = null) {
+        if ($timestamp === null) {
+            $timestamp = time();
+        }
+        return date('Y-m-d H:m:s', $timestamp);
     }
 
 }

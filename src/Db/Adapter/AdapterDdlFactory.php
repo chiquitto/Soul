@@ -2,9 +2,8 @@
 
 namespace Chiquitto\Soul\Db\Adapter;
 
-use Interop\Container\ContainerInterface;
 use Chiquitto\Soul\Db\Adapter\Adapter;
-use Zend\ServiceManager\Factory\FactoryInterface;
+use Interop\Container\ContainerInterface;
 
 /**
  * Description of AdapterDdlFactory
@@ -13,10 +12,10 @@ use Zend\ServiceManager\Factory\FactoryInterface;
  * @link https://zf2-docs.readthedocs.org/en/latest/modules/zend.log.writers.html 
  * @return Adapter 
  */
-class AdapterDdlFactory implements FactoryInterface
+class AdapterDdlFactory extends AdapterFactory
 {
 
-    public function __invoke(ContainerInterface $container, $requestedName, array $options = null)
+    protected function invoke(ContainerInterface $container, $requestedName, array $options = null)
     {
         $config = $container->get('Configuration');
         $dbParams = $config['dbddl'];

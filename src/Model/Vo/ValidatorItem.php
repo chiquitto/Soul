@@ -3,6 +3,7 @@
 namespace Chiquitto\Soul\Model\Vo;
 
 use Chiquitto\Soul\Exception\InvalidInputException;
+use Zend\Filter\FilterChain;
 use Zend\Validator\ValidatorChain;
 
 /**
@@ -27,10 +28,15 @@ class ValidatorItem {
 
     public function isValid(Item $itemVo) {
         $this->messages = array();
-
+        
         $isValid = true;
         foreach ($this->validators as $fieldName => $validatorField) {
+            /* @var $validatorField ValidatorField */
             $isValid = $this->isValidValidator($fieldName, $itemVo, $validatorField) && $isValid;
+            
+            if ((!$isValid) && ($validatorField->isBreakChainOnFailure())) {
+                break;
+            }
         }
 
         if (!$isValid) {
@@ -42,7 +48,14 @@ class ValidatorItem {
         return true;
     }
 
-    private function isValidValidator($fieldName, Item $itemVo, ValidatorField $validatorField) {
+    private function isValidValidator($fieldName, Item $itemVo, ValidatorField $validatorField) {        
+        if ($filterChain = $validatorField->getFilterChain()) {
+            /* @var $filterChain FilterChain */
+            $v = $itemVo->get($fieldName);
+            $r = $filterChain->filter($v);
+            $itemVo->set($fieldName, $r);
+        }
+        
         if ($validatorChain = $validatorField->getValidatorChain()) {
             /* @var $validatorChain ValidatorChain */
             if (!$validatorChain->isValid($itemVo->get($fieldName))) {

@@ -35,6 +35,11 @@ class Exception extends PhpException {
      * Lancado para dados que nao foram aprovados por \Chiquitto\Soul\Model\Vo\ValidatorItemset::isValid()
      */
     const INVALID_INPUT_VALIDATOR_SET = 1005;
+    
+    /**
+     * Lancado quando o adaptador de db lancou uma excecao
+     */
+    const INVALID_QUERY = 1006;
 
     protected $defaultCode = null;
     protected $defaultMessage = null;

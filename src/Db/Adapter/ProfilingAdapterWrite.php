@@ -3,7 +3,7 @@
 namespace Chiquitto\Soul\Db\Adapter;
 
 use BjyProfiler\Db\Adapter\ProfilingAdapter as BjyProfilerProfilingAdapter;
-use BjyProfiler\Db\Profiler\Profiler;
+use Chiquitto\Soul\Db\Profiler\BjyProfilerProfiler;
 use Zend\Db\Adapter\Platform\PlatformInterface;
 use Zend\Db\Adapter\Profiler\ProfilerInterface;
 use Zend\Db\ResultSet\ResultSetInterface;
@@ -21,7 +21,7 @@ class ProfilingAdapterWrite extends BjyProfilerProfilingAdapter implements Adapt
     {
         parent::__construct($driver, $platform, $queryResultPrototype, $profiler);
 
-        $this->setProfiler(new Profiler);
+        $this->setProfiler(new BjyProfilerProfiler());
         $this->injectProfilingStatementPrototype();
     }
 
