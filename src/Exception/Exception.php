@@ -9,7 +9,8 @@ use Exception as PhpException;
  *
  * @author Alisson Chiquitto <chiquitto@chiquitto.com.br>
  */
-class Exception extends PhpException {
+class Exception extends PhpException
+{
 
     /**
      * Excecao lancada para metodos que retornam tipos invalidos
@@ -30,21 +31,34 @@ class Exception extends PhpException {
      * Lancado quando dados que o usuario forneceu sao invalidos
      */
     const INVALID_DATA_USER = 1004;
-    
+
     /**
      * Lancado para dados que nao foram aprovados por \Chiquitto\Soul\Model\Vo\ValidatorItemset::isValid()
      */
     const INVALID_INPUT_VALIDATOR_SET = 1005;
-    
+
     /**
      * Lancado quando o adaptador de db lancou uma excecao
      */
     const INVALID_QUERY = 1006;
 
+    /**
+     * Throw when user has insufficient privileges for resource access
+     * \Chiquitto\Soul\Acl\Exception\InsufficientPrivilegesResourceException
+     */
+    const INSUFFICIENT_PRIVILEGE_RESOURCE = 1007;
+    
+    /**
+     * Throw when solicited resource isnt defined
+     * \Chiquitto\Soul\Acl\Exception\UndefinedResourceException
+     */
+    const UNDEFINED_RESOURCE = 1008;
+
     protected $defaultCode = null;
     protected $defaultMessage = null;
 
-    public function __construct($message = "", $code = 0, PhpException $previous = null) {
+    public function __construct($message = "", $code = 0, PhpException $previous = null)
+    {
         if (!$message) {
             $message = $this->defaultMessage;
         }
