@@ -10,7 +10,7 @@ namespace Chiquitto\Soul\Acl;
 class Privileges
 {
 
-    private static $privilegesName = [];
+    protected static $privilegesName = [];
 
     public static function getPrivilegesId()
     {
