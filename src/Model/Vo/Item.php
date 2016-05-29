@@ -55,6 +55,8 @@ abstract class Item {
     const TYPE_OBJECT = 1701;
     const TYPE_ITEM = 1702;
     const TYPE_TEXT = 1801;
+    const TYPE_ID_INT = 1901;
+    const TYPE_ID_STRING = 1902;
 
     protected $data = array();
     protected $dataType = array();
@@ -236,6 +238,7 @@ abstract class Item {
             throw new InvalidArgumentException("Unknown type for field $name in " . get_class($this));
         } elseif (null !== $value) {
             switch ($this->dataType[$name]) {
+                case self::TYPE_ID_STRING:
                 case self::TYPE_STRING:
                 case self::TYPE_TEXT:
                     if (!is_string($value)) {
@@ -264,6 +267,7 @@ abstract class Item {
                     $value = substr((string) $value, 0, 50);
                     break;
 
+                case self::TYPE_ID_INT:
                 case self::TYPE_INT:
                 case self::TYPE_TIMESTAMP:
                     if (!is_int($value)) {
