@@ -27,19 +27,25 @@ class ProfilingAdapterWrite extends BjyProfilerProfilingAdapter implements Adapt
 
     public function beginTransaction()
     {
+        $this->getProfiler()->startQuery("BEGIN");
         $this->getDriver()->getConnection()->beginTransaction();
+        $this->getProfiler()->endQuery();
         return true;
     }
 
     public function commit()
     {
+        $this->getProfiler()->startQuery("COMMIT");
         $this->getDriver()->getConnection()->commit();
+        $this->getProfiler()->endQuery();
         return true;
     }
-
+    
     public function rollback()
     {
+        $this->getProfiler()->startQuery("ROLLBACK");
         $this->getDriver()->getConnection()->rollback();
+        $this->getProfiler()->endQuery();
         return true;
     }
 

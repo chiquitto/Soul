@@ -22,7 +22,7 @@ class Resources
         }
         
         if (!isset(static::$resources[$idresource])) {
-            throw new UndefinedResourceException;
+            throw new UndefinedResourceException("Undefined $idresource resource");
         }
         
         return isset(static::$resources[$idresource]) ? static::$resources[$idresource] : null;

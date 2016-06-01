@@ -3,10 +3,12 @@
 namespace Chiquitto\Soul\Db\TableGateway;
 
 use ArrayObject;
-use Closure;
 use Chiquitto\Soul\Db\Adapter\Adapter;
+use Chiquitto\Soul\Db\Sql\Upsert;
+use Closure;
 use Exception;
 use Zend\Db\Adapter\AdapterInterface;
+use Zend\Db\Adapter\Driver\Pdo\Statement;
 use Zend\Db\Sql\Predicate\Expression;
 use Zend\Db\Sql\Where;
 use Zend\Db\TableGateway\TableGateway as ZendTableGateway;
@@ -77,6 +79,48 @@ class TableGateway extends ZendTableGateway {
             $timestamp = time();
         }
         return date('Y-m-d H:m:s', $timestamp);
+    }
+    
+    public function upsert($set, array $keys)
+    {
+        // delete and insert
+        
+        $upsert = new Upsert($this->table);
+        $upsert->setUpdateFieldStatements($set);
+        $upsert->values($keys + $set);
+        
+        $statement = $this->sql->prepareStatementForSqlObject($upsert);
+        $result = $statement->execute();
+        
+        //$sql = $upsert->getSqlString($this->getAdapter()->getPlatform());
+        //$query = $this->getAdapter()->query($sql);
+        //$query->execute();
+        
+        return true;
+        
+        $values = $keys + $set;
+        
+        $insert = $this->sql->insert();
+        $insert->values($values);
+        
+        $sql = $insert->getSqlString($this->getAdapter()->getPlatform());
+        $sql .= " ON DUPLICATE KEY ";
+        
+        $update = $this->sql->update();
+        $update->set($set);
+        
+        $set = [];
+        foreach ($update->getRawState('set') as $field => $value) {
+            $set[] = $this->adapter->getPlatform()->quoteIdentifier($field) . " = " . $this->adapter->getPlatform()->quoteValue($value);
+        }
+        
+        $sql .= join(", ", $set);
+        
+        /* @var $query Statement */
+        $query = $this->adapter->query($sql);
+        $query->execute();
+        
+        //$sql = "INSERT INTO sometable (id, col2, col3) VALUES (:id, :col2, :col3) ON DUPLICATE KEY UPDATE col2 = VALUES(col2), col3 = VALUES(col3)";
     }
 
 }

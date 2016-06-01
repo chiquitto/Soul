@@ -26,6 +26,12 @@ class ValidatorItem {
         return $this->messages;
     }
 
+    /**
+     * 
+     * @param \Chiquitto\Soul\Model\Vo\Item $itemVo
+     * @return boolean
+     * @throws InvalidInputException
+     */
     public function isValid(Item $itemVo) {
         $this->messages = array();
         
