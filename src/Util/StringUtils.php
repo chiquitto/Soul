@@ -7,7 +7,7 @@ namespace Chiquitto\Soul\Util;
  *
  * @author Alisson Chiquitto <chiquitto@chiquitto.com.br>
  */
-class String {
+class StringUtils {
 
     public static function randomString($length = 10, $characters = null) {
         if ($characters === null) {
