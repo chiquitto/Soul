@@ -17,7 +17,7 @@ class Resources
 
     public static function getResource($idresource)
     {
-        if (isset(static::$extendedResources[$idresource])) {
+        while (isset(static::$extendedResources[$idresource])) {
             $idresource = static::$extendedResources[$idresource];
         }
         
