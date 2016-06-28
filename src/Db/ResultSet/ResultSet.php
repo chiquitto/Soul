@@ -8,6 +8,7 @@ use Zend\Db\ResultSet\ResultSet as ZendResultSet;
  * Description of ResultSet
  *
  * @author Alisson Chiquitto <chiquitto@chiquitto.com.br>
+ * @codeCoverageIgnore
  */
 class ResultSet extends ZendResultSet {
 

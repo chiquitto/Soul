@@ -9,7 +9,8 @@ use Interop\Container\ContainerInterface;
  * Description of AdapterDdlFactory
  * 
  * @author Alisson Chiquitto <chiquitto@chiquitto.com.br> 
- * @link https://zf2-docs.readthedocs.org/en/latest/modules/zend.log.writers.html 
+ * @link https://zf2-docs.readthedocs.org/en/latest/modules/zend.log.writers.html
+ * @codeCoverageIgnore
  * @return Adapter 
  */
 class AdapterDdlFactory extends AdapterFactory
@@ -23,7 +24,7 @@ class AdapterDdlFactory extends AdapterFactory
         if (isset($dbParams['dbprofiler'])) {
             return new ProfilingAdapterDdl($dbParams);
         } else {
-            // @codeCoverageIgnoreStart 
+            // @codeCoverageIgnoreStart
             return new AdapterDdl($dbParams);
             // @codeCoverageIgnoreEnd 
         }

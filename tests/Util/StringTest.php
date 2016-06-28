@@ -3,7 +3,7 @@
 namespace Chiquitto\SoulTest\Util;
 
 use Chiquitto\Soul\Test\TestCase;
-use Chiquitto\Soul\Util\String;
+use Chiquitto\Soul\Util\StringUtils;
 
 /**
  * Description of String
@@ -12,13 +12,13 @@ use Chiquitto\Soul\Util\String;
  */
 class StringTest extends TestCase {
     public function testRandomString() {
-        $actual = String::randomString();
+        $actual = StringUtils::randomString();
         $this->assertEquals(10, strlen($actual));
         
-        $actual = String::randomString(5);
+        $actual = StringUtils::randomString(5);
         $this->assertEquals(5, strlen($actual));
         
-        $actual = String::randomString(5, 'a');
+        $actual = StringUtils::randomString(5, 'a');
         $this->assertEquals(5, strlen($actual));
         $this->assertEquals('aaaaa', $actual);
     }
@@ -29,7 +29,7 @@ class StringTest extends TestCase {
         $arrayExpected = array("a", "a", "a", "a", "a", "e", "e", "e", "e", "i", "i", "i", "i", "o", "o", "o", "o", "o", "u", "u", "u", "u", "c", "A", "A", "A", "A", "A", "E", "E", "E", "E", "I", "I", "I", "I", "O", "O", "O", "O", "O", "U", "U", "U", "U", "C");
         
         foreach ($arrayTest as $k => $v) {
-            $this->assertEquals($arrayExpected[$k], String::removeAcentos($v));
+            $this->assertEquals($arrayExpected[$k], StringUtils::removeAcentos($v));
         }
     }
     
@@ -53,7 +53,7 @@ class StringTest extends TestCase {
         ];
         
         foreach ($arrayTest as $k => $v) {
-            $this->assertEquals($arrayExpected[$k], String::strToPermalink($v));
+            $this->assertEquals($arrayExpected[$k], StringUtils::strToPermalink($v));
         }
     }
 }

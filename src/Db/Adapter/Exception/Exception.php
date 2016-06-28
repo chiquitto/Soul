@@ -4,6 +4,11 @@ namespace Chiquitto\Soul\Db\Adapter\Exception;
 
 use Chiquitto\Soul\Exception\Exception as SoulException;
 
+/**
+ * Class Exception
+ * @codeCoverageIgnore
+ * @package Chiquitto\Soul\Db\Adapter\Exception
+ */
 class Exception extends SoulException {
 
     private $sql;

@@ -10,7 +10,8 @@ use Zend\ServiceManager\Factory\FactoryInterface;
  * Description of ProfilingAdapterFactory 
  * 
  * @author Alisson Chiquitto <chiquitto@chiquitto.com.br> 
- * @link https://zf2-docs.readthedocs.org/en/latest/modules/zend.log.writers.html 
+ * @link https://zf2-docs.readthedocs.org/en/latest/modules/zend.log.writers.html
+ * @codeCoverageIgnore
  * @return Adapter 
  */
 class AdapterFactory implements FactoryInterface

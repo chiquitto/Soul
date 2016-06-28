@@ -78,7 +78,7 @@ class TableGateway extends ZendTableGateway {
         if ($timestamp === null) {
             $timestamp = time();
         }
-        return date('Y-m-d H:m:s', $timestamp);
+        return date('Y-m-d H:i:s', $timestamp);
     }
     
     public function upsert($set, array $keys)

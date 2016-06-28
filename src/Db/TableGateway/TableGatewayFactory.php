@@ -103,7 +103,7 @@ class TableGatewayFactory
     }
 
     /**
-     * 
+     *
      * @param type $method
      * @return Adapter
      */
@@ -117,7 +117,11 @@ class TableGatewayFactory
 
         return self::getDefaultDbAdapterRead();
     }
-    
+
+    /**
+     *
+     * @return Adapter
+     */
     public static function getDefaultDbAdapterDdl()
     {
         if (!self::$defaultAdapterDdl) {

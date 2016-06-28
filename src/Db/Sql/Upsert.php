@@ -12,6 +12,7 @@ use Zend\Db\Sql\Insert;
 
 /**
  * @link https://coding-on-my-mind.com/1/zf2-php-mysql-upsert-update-on-duplicate-key
+ * @codeCoverageIgnore
  */
 class Upsert extends Insert {
     /*     * #@+

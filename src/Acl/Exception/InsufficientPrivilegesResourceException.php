@@ -2,6 +2,11 @@
 
 namespace Chiquitto\Soul\Acl\Exception;
 
+/**
+ * Class InsufficientPrivilegesResourceException
+ * @codeCoverageIgnore
+ * @package Chiquitto\Soul\Acl\Exception
+ */
 class InsufficientPrivilegesResourceException extends Exception
 {
 

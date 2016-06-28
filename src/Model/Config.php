@@ -154,6 +154,11 @@ class Config {
     {
         return $this->config[$paramName];
     }
+
+    public function getAll()
+    {
+        return $this->config;
+    }
     
     function getCacheFile() {
         return $this->cacheFile;

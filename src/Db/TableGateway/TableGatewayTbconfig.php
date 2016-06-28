@@ -10,6 +10,7 @@ use Zend\Db\Sql\Sql;
  * Description of TableGatewayConfig
  *
  * @author Alisson Chiquitto <chiquitto@chiquitto.com.br>
+ * @codeCoverageIgnore
  */
 class TableGatewayTbconfig extends TableGateway {
 

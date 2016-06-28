@@ -10,7 +10,7 @@ use Chiquitto\Soul\Exception\InvalidArgumentException;
 use Chiquitto\Soul\Model\Vo\Item;
 use Chiquitto\Soul\Model\Vo\ValidatorItem;
 use Chiquitto\Soul\Test\TestCase;
-use Chiquitto\Soul\Util\String;
+use Chiquitto\Soul\Util\StringUtils;
 use Chiquitto\SoulTest\Classes\Model\Vo\Item1;
 use Chiquitto\SoulTest\Classes\Model\Vo\Item2;
 use Chiquitto\SoulTest\Classes\Model\Vo\Itemset1;
@@ -23,20 +23,20 @@ class ItemTest extends TestCase {
         $id = 1;
         $string = str_repeat(uniqid(), mt_rand(5, 15));
         $string1 = $alfabeto[mt_rand(0, 25)];
-        $string255 = String::randomString(255);
-        $string50 = String::randomString(50);
+        $string255 = StringUtils::randomString(255);
+        $string50 = StringUtils::randomString(50);
         $float = mt_rand(1, 99) / 100;
         $bool = (bool) mt_rand(0, 1);
         $timestamp = strtotime('next year');
         $decimal18_2 = round(mt_rand(1, 99999) + (mt_rand(1, 99) / 100), 2);
         $decimal18_4 = round(mt_rand(1, 99999) + (mt_rand(1, 9999) / 10000), 4);
-        $list = str_split(String::randomString(mt_rand(5, 25)));
-        $iterator = new ArrayIterator(str_split(String::randomString(mt_rand(5, 25))));
+        $list = str_split(StringUtils::randomString(mt_rand(5, 25)));
+        $iterator = new ArrayIterator(str_split(StringUtils::randomString(mt_rand(5, 25))));
         $object = (object) array(
-                    'string' => String::randomString(mt_rand(5, 25)),
+                    'string' => StringUtils::randomString(mt_rand(5, 25)),
                     'number' => mt_rand(100, 200),
         );
-        $text = String::randomString(mt_rand(500, 1000));
+        $text = StringUtils::randomString(mt_rand(500, 1000));
         $method = str_repeat(uniqid(), mt_rand(5, 15));
 
         $item = new Item1(array(

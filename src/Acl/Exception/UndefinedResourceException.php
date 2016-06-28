@@ -2,6 +2,11 @@
 
 namespace Chiquitto\Soul\Acl\Exception;
 
+/**
+ * Class UndefinedResourceException
+ * @codeCoverageIgnore
+ * @package Chiquitto\Soul\Acl\Exception
+ */
 class UndefinedResourceException extends Exception
 {
 
