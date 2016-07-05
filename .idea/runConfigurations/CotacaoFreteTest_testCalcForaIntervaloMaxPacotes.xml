@@ -1,0 +1,6 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="CotacaoFreteTest.testCalcForaIntervaloMaxPacotes" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+    <TestRunner class="Chiquitto\SoulTest\Correios\CotacaoFreteTest" file="$PROJECT_DIR$/tests/Correios/CotacaoFreteTest.php" method="testCalcForaIntervaloMaxPacotes" scope="Method" />
+    <method />
+  </configuration>
+</component>

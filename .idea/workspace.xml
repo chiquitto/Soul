@@ -2,28 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad5e8044-41ac-401f-a7d2-dd6e275123b6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Util/CpfCnpj.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/runConfigurations/CotacaoFreteTest_testCalcForaIntervaloMaxPacotes.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.php" afterPath="$PROJECT_DIR$/config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/phpunit-bootstrap.php" afterPath="$PROJECT_DIR$/phpunit-bootstrap.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Acl/Exception/Exception.php" afterPath="$PROJECT_DIR$/src/Acl/Exception/Exception.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Acl/Exception/InsufficientPrivilegesResourceException.php" afterPath="$PROJECT_DIR$/src/Acl/Exception/InsufficientPrivilegesResourceException.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Acl/Exception/UndefinedResourceException.php" afterPath="$PROJECT_DIR$/src/Acl/Exception/UndefinedResourceException.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Db/Adapter/AdapterDdlFactory.php" afterPath="$PROJECT_DIR$/src/Db/Adapter/AdapterDdlFactory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Db/Adapter/AdapterFactory.php" afterPath="$PROJECT_DIR$/src/Db/Adapter/AdapterFactory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Db/Adapter/AdapterWriteFactory.php" afterPath="$PROJECT_DIR$/src/Db/Adapter/AdapterWriteFactory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Db/Adapter/Exception/Exception.php" afterPath="$PROJECT_DIR$/src/Db/Adapter/Exception/Exception.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Db/ResultSet/ResultSet.php" afterPath="$PROJECT_DIR$/src/Db/ResultSet/ResultSet.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Db/Sql/Upsert.php" afterPath="$PROJECT_DIR$/src/Db/Sql/Upsert.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Db/TableGateway/TableGateway.php" afterPath="$PROJECT_DIR$/src/Db/TableGateway/TableGateway.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Db/TableGateway/TableGatewayFactory.php" afterPath="$PROJECT_DIR$/src/Db/TableGateway/TableGatewayFactory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Db/TableGateway/TableGatewayTbconfig.php" afterPath="$PROJECT_DIR$/src/Db/TableGateway/TableGatewayTbconfig.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/Config.php" afterPath="$PROJECT_DIR$/src/Model/Config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Test/TestCase.php" afterPath="$PROJECT_DIR$/src/Test/TestCase.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Model/Vo/ItemTest.php" afterPath="$PROJECT_DIR$/tests/Model/Vo/ItemTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Util/StringTest.php" afterPath="$PROJECT_DIR$/tests/Util/StringTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Correios/CotacaoFrete.php" afterPath="$PROJECT_DIR$/src/Correios/CotacaoFrete.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Correios/CotacaoFreteTest.php" afterPath="$PROJECT_DIR$/tests/Correios/CotacaoFreteTest.php" />
     </list>
     <ignored path="Soul.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,7 +19,10 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Soul$All.coverage" NAME="All Coverage Results" MODIFIED="1467037108660" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="PhpCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Soul$All.coverage" NAME="All Coverage Results" MODIFIED="1467718877304" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="PhpCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myAutoScrollToSource" value="true" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -53,14 +38,6 @@
         <option name="myItemId" />
         <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
       </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="Sqlite (Xerial) - data.sqlite.db" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="tbconfig" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
     </PATH>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
@@ -68,7 +45,28 @@
     <favorites_list name="Soul" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="CotacaoFreteTest.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tests/Correios/CotacaoFreteTest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="36">
+              <caret line="53" column="5" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CotacaoFrete.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Correios/CotacaoFrete.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="192" column="29" selection-start-line="192" selection-start-column="29" selection-end-line="192" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -79,10 +77,8 @@
         <option value="$PROJECT_DIR$/src/Validator/Cpf.php" />
         <option value="$PROJECT_DIR$/src/Correios/Frete.php" />
         <option value="$PROJECT_DIR$/tests/Correios/FreteTest.php" />
-        <option value="$PROJECT_DIR$/src/Correios/CotacaoFrete.php" />
         <option value="$PROJECT_DIR$/tests/Model/Vo/ItemTest.php" />
         <option value="$PROJECT_DIR$/tests/Util/StringTest.php" />
-        <option value="$PROJECT_DIR$/tests/Correios/CotacaoFreteTest.php" />
         <option value="$PROJECT_DIR$/phpunit.xml" />
         <option value="$PROJECT_DIR$/src/Acl/Exception/Exception.php" />
         <option value="$PROJECT_DIR$/src/Acl/Exception/InsufficientPrivilegesResourceException.php" />
@@ -127,6 +123,8 @@
         <option value="$PROJECT_DIR$/src/Util/CpfCnpj.php" />
         <option value="$PROJECT_DIR$/tests/Validator/CpfTest.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/Correios/CotacaoFrete.php" />
+        <option value="$PROJECT_DIR$/tests/Correios/CotacaoFreteTest.php" />
       </list>
     </option>
   </component>
@@ -142,9 +140,9 @@
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP 5.6" />
   <component name="ProjectFrameBounds">
     <option name="x" value="65" />
-    <option name="y" value="24" />
+    <option name="y" value="-4" />
     <option name="width" value="1855" />
-    <option name="height" value="1056" />
+    <option name="height" value="1084" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -252,24 +250,7 @@
     <panes>
       <pane id="Scratches" />
       <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Soul" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Soul" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Soul" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
+        <subPane />
       </pane>
       <pane id="Scope" />
     </panes>
@@ -344,12 +325,18 @@
       <TestRunner class="Chiquitto\SoulTest\Acl\BjyProfilerProfilerTest" file="$PROJECT_DIR$/tests/Db/Profiler/BjyProfilerProfilerTest.php" scope="Class" />
       <method />
     </configuration>
-    <list size="5">
+    <configuration default="false" name="CotacaoFreteTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner class="Chiquitto\SoulTest\Correios\CotacaoFreteTest" file="$PROJECT_DIR$/tests/Correios/CotacaoFreteTest.php" scope="Class" />
+      <method />
+    </configuration>
+    <list size="7">
       <item index="0" class="java.lang.String" itemvalue="PHPUnit.All" />
       <item index="1" class="java.lang.String" itemvalue="PHPUnit.ConfigTest" />
       <item index="2" class="java.lang.String" itemvalue="PHPUnit.BjyProfilerProfilerTest" />
-      <item index="3" class="java.lang.String" itemvalue="PHPUnit.NotEmptyTest.testEmptyItemset" />
-      <item index="4" class="java.lang.String" itemvalue="PHPUnit.CpfTest" />
+      <item index="3" class="java.lang.String" itemvalue="PHPUnit.CotacaoFreteTest" />
+      <item index="4" class="java.lang.String" itemvalue="PHPUnit.CotacaoFreteTest.testCalcForaIntervaloMaxPacotes" />
+      <item index="5" class="java.lang.String" itemvalue="PHPUnit.NotEmptyTest.testEmptyItemset" />
+      <item index="6" class="java.lang.String" itemvalue="PHPUnit.CpfTest" />
     </list>
     <recent_temporary>
       <list size="2">
@@ -393,64 +380,67 @@
       <workItem from="1467120090431" duration="97000" />
       <workItem from="1467120199153" duration="1451000" />
       <workItem from="1467121661551" duration="37000" />
-      <workItem from="1467121710527" duration="759000" />
+      <workItem from="1467121710527" duration="801000" />
+      <workItem from="1467124530287" duration="570000" />
+      <workItem from="1467383449518" duration="27000" />
+      <workItem from="1467718793041" duration="2792000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All - 2016.06.28 at 10h 53m 07s.xml">
+    <history-entry file="All - 2016.07.05 at 09h 30m 35s.xml">
       <configuration name="All" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="All - 2016.06.28 at 10h 53m 22s.xml">
-      <configuration name="All" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="CotacaoFreteTest - 2016.07.05 at 09h 01m 02s.xml">
+      <configuration name="CotacaoFreteTest" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="All - 2016.06.28 at 10h 53m 31s.xml">
-      <configuration name="All" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="CotacaoFreteTest - 2016.07.05 at 09h 02m 27s.xml">
+      <configuration name="CotacaoFreteTest" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="All - 2016.06.28 at 10h 54m 54s.xml">
-      <configuration name="All" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="CotacaoFreteTest - 2016.07.05 at 09h 17m 23s.xml">
+      <configuration name="CotacaoFreteTest" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="All - 2016.06.28 at 10h 56m 44s.xml">
-      <configuration name="All" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="CotacaoFreteTest - 2016.07.05 at 09h 18m 21s.xml">
+      <configuration name="CotacaoFreteTest" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="CpfTest - 2016.06.28 at 10h 55m 01s.xml">
-      <configuration name="CpfTest" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="CotacaoFreteTest - 2016.07.05 at 09h 26m 45s.xml">
+      <configuration name="CotacaoFreteTest" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="CpfTest - 2016.06.28 at 10h 55m 07s.xml">
-      <configuration name="CpfTest" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="CotacaoFreteTest - 2016.07.05 at 09h 27m 20s.xml">
+      <configuration name="CotacaoFreteTest" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="CpfTest - 2016.06.28 at 10h 55m 10s.xml">
-      <configuration name="CpfTest" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="CotacaoFreteTest - 2016.07.05 at 09h 27m 59s.xml">
+      <configuration name="CotacaoFreteTest" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="CpfTest - 2016.06.28 at 10h 55m 13s.xml">
-      <configuration name="CpfTest" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="CotacaoFreteTest - 2016.07.05 at 09h 29m 13s.xml">
+      <configuration name="CotacaoFreteTest" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="CpfTest - 2016.06.28 at 10h 55m 16s.xml">
-      <configuration name="CpfTest" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="CotacaoFreteTest - 2016.07.05 at 09h 30m 13s.xml">
+      <configuration name="CotacaoFreteTest" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21574000" />
+    <option name="totallyTimeSpent" value="25005000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
-    <editor active="false" />
+    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1840796" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19071311" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22719735" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22719735" sideWeight="0.49444443" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20729166" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.8164732" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12916666" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22719735" sideWeight="0.50555557" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14096186" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12916666" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946378" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -473,27 +463,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tests/Acl/GroupsTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="8" column="33" selection-start-line="2" selection-start-column="0" selection-end-line="8" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/bjyoungblood/bjy-profiler/src/BjyProfiler/Db/Profiler/Profiler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-165">
-          <caret line="64" column="34" selection-start-line="64" selection-start-column="34" selection-end-line="64" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Db/Profiler/BjyProfilerProfiler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Db/ResultSet/ResultSet.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -780,7 +749,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="349">
           <caret line="90" column="58" selection-start-line="90" selection-start-column="58" selection-end-line="90" selection-end-column="58" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -788,7 +756,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
           <caret line="29" column="27" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -796,7 +763,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="199">
           <caret line="949" column="27" selection-start-line="949" selection-start-column="27" selection-end-line="949" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -804,9 +770,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="199">
           <caret line="17" column="61" selection-start-line="17" selection-start-column="61" selection-end-line="17" selection-end-column="61" />
-          <folding>
-            <element signature="e#48#81#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -822,7 +785,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="887">
           <caret line="64" column="9" selection-start-line="64" selection-start-column="9" selection-end-line="64" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -830,7 +792,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="26" column="12" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -838,9 +799,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="30" column="37" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
-          <folding>
-            <element signature="e#43#76#0#PHP" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phpunit.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Correios/CotacaoFrete.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="192" column="29" selection-start-line="192" selection-start-column="29" selection-end-line="192" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Correios/CotacaoFreteTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="53" column="5" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
