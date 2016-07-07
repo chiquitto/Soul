@@ -1,0 +1,6 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="CnpjTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+    <TestRunner class="Chiquitto\SoulTest\Util\CnpjTest" file="$PROJECT_DIR$/tests/Util/CnpjTest.php" scope="Class" />
+    <method />
+  </configuration>
+</component>

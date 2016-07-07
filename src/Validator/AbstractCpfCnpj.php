@@ -36,7 +36,7 @@ abstract class AbstractCpfCnpj extends ZendAbstractValidator
      * Tamanho do Campo
      * @var int
      */
-    protected $_size = 0;
+    protected $size = 0;
 
     /**
      * Modelos de Mensagens
@@ -54,51 +54,44 @@ abstract class AbstractCpfCnpj extends ZendAbstractValidator
      */
     protected $_modifiers = array();
 
-    /**
-     * Validação Interna do Documento
-     * @param string $value Dados para Validação
-     * @return boolean Confirmação de Documento Válido
-     */
-    protected function _check($value)
+    public function __construct($options = null)
     {
-        // Captura dos Modificadores
-        foreach ($this->_modifiers as $modifier) {
-            $result = 0; // Resultado Inicial
-            $size = count($modifier); // Tamanho dos Modificadores
-            for ($i = 0; $i < $size; $i++) {
-                $result += $value[$i] * $modifier[$i]; // Somatório
-            }
-            $result = $result % 11;
-            $digit  = ($result < 2 ? 0 : 11 - $result); // Dígito
-            // Verificação
-            if ($value[$size] != $digit) {
-                return false;
-            }
+        if ($this instanceof Cpf) {
+            $this->size = \Chiquitto\Soul\Util\Cpf::getSize();
+        } else {
+            $this->size = \Chiquitto\Soul\Util\Cnpj::getSize();
         }
-        return true;
+
+        parent::__construct($options);
     }
 
     public function isValid($value)
     {
-        // Filtro de Dados
-        $data = preg_replace('/[^0-9]/', '', $value);
         // Verificação de Tamanho
-        if (strlen($data) != $this->_size) {
+        if (strlen($value) != $this->size) {
             $this->error(self::SIZE, $value);
             return false;
         }
+
         // Verificação de Dígitos Expandidos
-        if (str_repeat($data[0], $this->_size) == $data) {
+        if (str_repeat($value[0], $this->size) == $value) {
             $this->error(self::EXPANDED, $value);
             return false;
         }
+
         // Verificação de Dígitos
-        if (!$this->_check($data)) {
+        if ($this instanceof Cpf) {
+            $ok = \Chiquitto\Soul\Util\Cpf::isValid($value);
+        } else {
+            $ok = \Chiquitto\Soul\Util\Cnpj::isValid($value);
+        }
+
+        if (!$ok) {
             $this->error(self::DIGIT, $value);
             return false;
         }
-        // Comparações Concluídas
-        return true; // Todas Verificações Executadas
+
+        return true;
     }
 
 }

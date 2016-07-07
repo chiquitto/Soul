@@ -1,0 +1,6 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Validator\CpfTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+    <TestRunner class="Chiquitto\SoulTest\Validator\CpfTest" file="$PROJECT_DIR$/tests/Validator/CpfTest.php" scope="Class" options="--repeat 10" />
+    <method />
+  </configuration>
+</component>

@@ -3,16 +3,13 @@
 namespace Chiquitto\SoulTest\Validator;
 
 use Chiquitto\Soul\Test\TestCase;
-use Chiquitto\Soul\Util\CpfCnpj;
 use Chiquitto\Soul\Validator\Cnpj;
-use Chiquitto\Soul\Validator\Cpf;
-
 
 class CnpjTest extends TestCase
 {
     public function testIsvalid()
     {
-        $cnpj = CpfCnpj::gerarCnpj();
+        $cnpj = \Chiquitto\Soul\Util\Cnpj::generate();
 
         $val = new Cnpj();
         $this->assertTrue($val->isValid($cnpj));
@@ -20,7 +17,7 @@ class CnpjTest extends TestCase
 
     public function testIsvalidInvalidDigit()
     {
-        $cnpj = CpfCnpj::gerarCnpj();
+        $cnpj = \Chiquitto\Soul\Util\Cnpj::generate();
 
         $d0 = $cnpj[0];
         $d0 = substr(++$d0, 0, 1);
