@@ -3,8 +3,6 @@
 namespace Chiquitto\Soul\Model\Vo;
 
 use Iterator;
-use Chiquitto\Soul\Model\Vo\Item;
-use Chiquitto\Soul\Model\Vo\ValidatorItemset;
 
 /**
  * Description of Itemset
@@ -19,52 +17,6 @@ abstract class Itemset implements Iterator
     protected $itens = [];
     protected $count = 0;
 
-    public function rewind()
-    {
-        reset($this->itens);
-    }
-
-    /**
-     * 
-     * @return Item|null
-     */
-    public function current()
-    {
-        $var = current($this->itens);
-        return $var;
-    }
-
-    /**
-     * Retorna a chave do valor atual
-     * @return int
-     */
-    public function key()
-    {
-        $var = key($this->itens);
-        return $var;
-    }
-
-    /**
-     * 
-     * @return Item|null
-     */
-    public function next()
-    {
-        $var = next($this->itens);
-        return $var;
-    }
-
-    /**
-     * 
-     * @return bool
-     */
-    public function valid()
-    {
-        $key = key($this->itens);
-        $var = ($key !== NULL && $key !== FALSE);
-        return $var;
-    }
-
     public function add(Item $item)
     {
         $this->itens[] = $item;
@@ -77,24 +29,6 @@ abstract class Itemset implements Iterator
         $this->add($item);
     }
 
-    /**
-     * 
-     * @param string|int $id
-     * @return Item|null
-     */
-    public function getById($id)
-    {
-        return isset($this->itensIndexed[$id]) ? $this->itensIndexed[$id] : null;
-    }
-
-    public function set(Item $item, $key = NULL)
-    {
-        if (null === $key) {
-            $key = $this->key();
-        }
-        $this->itens[$key] = $item;
-    }
-
     public function clear()
     {
         $this->itens = array();
@@ -102,7 +36,7 @@ abstract class Itemset implements Iterator
     }
 
     /**
-     * 
+     *
      * @return int
      */
     public function count()
@@ -111,7 +45,17 @@ abstract class Itemset implements Iterator
     }
 
     /**
-     * 
+     *
+     * @return Item|null
+     */
+    public function current()
+    {
+        $var = current($this->itens);
+        return $var;
+    }
+
+    /**
+     *
      * @param int $type
      * @param array $options
      * @return array
@@ -128,12 +72,71 @@ abstract class Itemset implements Iterator
     }
 
     /**
-     * 
+     *
+     * @param string|int $id
+     * @return Item|null
+     */
+    public function getByIndentifiedPos($id)
+    {
+        return isset($this->itensIndexed[$id]) ? $this->itensIndexed[$id] : null;
+    }
+
+    public function getRandom()
+    {
+        return $this->itens[mt_rand(0, $this->count() - 1)];
+    }
+
+    /**
+     * Retorna a chave do valor atual
+     * @return int
+     */
+    public function key()
+    {
+        $var = key($this->itens);
+        return $var;
+    }
+
+    /**
+     *
      * @return ValidatorItemset
      */
     public function newValidateItemset()
     {
         return new ValidatorItemset();
+    }
+
+    /**
+     *
+     * @return Item|null
+     */
+    public function next()
+    {
+        $var = next($this->itens);
+        return $var;
+    }
+
+    public function rewind()
+    {
+        reset($this->itens);
+    }
+
+    public function set(Item $item, $key = NULL)
+    {
+        if (null === $key) {
+            $key = $this->key();
+        }
+        $this->itens[$key] = $item;
+    }
+
+    /**
+     *
+     * @return bool
+     */
+    public function valid()
+    {
+        $key = key($this->itens);
+        $var = ($key !== NULL && $key !== FALSE);
+        return $var;
     }
 
 }

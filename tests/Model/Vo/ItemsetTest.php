@@ -20,8 +20,8 @@ class ItemsetTest extends TestCase
         $itemset->addIndexed($itemVo1, 1000);
         $itemset->addIndexed($itemVo2, 2000);
 
-        $this->assertEquals($itemVo1->id, $itemset->getById(1000)->id);
-        $this->assertEquals($itemVo2->id, $itemset->getById(2000)->id);
+        $this->assertEquals($itemVo1->id, $itemset->getByIndentifiedPos(1000)->id);
+        $this->assertEquals($itemVo2->id, $itemset->getByIndentifiedPos(2000)->id);
     }
 
     public function testCount()

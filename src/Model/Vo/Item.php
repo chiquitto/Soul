@@ -101,6 +101,11 @@ abstract class Item {
         $this->set($name, $value);
     }
 
+    public function __sleep()
+    {
+        return ['data', 'dataType', 'table', 'tablePk'];
+    }
+
     /**
      * Retorna o valor de um atributo.
      *
