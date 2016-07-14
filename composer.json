@@ -23,13 +23,13 @@
     },
     "minimum-stability": "stable",
     "require": {
-        "anahkiasen/underscore-php" : "dev-master",
         "zendframework/zend-db": "^2.5",
         "zendframework/zend-filter": "^2.7",
         "zendframework/zend-servicemanager": "^3",
         "zendframework/zend-validator": "^2.6",
         "aws/aws-sdk-php": "^3",
-        "intervention/image": "^2"
+        "intervention/image": "^2",
+        "anahkiasen/underscore-php": "^2.0"
     },
     "require-dev": {
         "phpunit/phpunit": "5.3.*",
