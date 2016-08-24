@@ -235,6 +235,26 @@ abstract class Item {
         }
     }
 
+    public function populateFromDb($data) {
+        foreach ($data as $k => $v) {
+            if (!isset($this->dataType[$k])) {
+                continue;
+            }
+
+            switch ($this->dataType[$k]) {
+                case self::TYPE_ID_INT:
+                case self::TYPE_INT:
+                    $v = (int) $v;
+                    break;
+
+                case self::TYPE_OBJECT:
+                    $v = json_decode($v);
+                    break;
+            }
+            $this->set($k, $v);
+        }
+    }
+
     public function set($name, $value) {
         $method = 'set' . ucfirst($name);
         if (method_exists($this, $method)) {

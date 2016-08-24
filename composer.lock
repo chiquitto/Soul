@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e4bad300a55cf8bcd484994a1ffbfe74",
-    "content-hash": "9478dad5812e57454ad707c7cf24a861",
+    "hash": "b4b1bca875075078ef93315d00804ae6",
+    "content-hash": "814c4cf11d3650c5dca8af54a90ebeae",
     "packages": [
         {
             "name": "anahkiasen/underscore-php",
-            "version": "dev-master",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Anahkiasen/underscore-php.git",
-                "reference": "2f979ca3480e1af047e3cfa0e73b00fa5b338900"
+                "reference": "48f97b295c82d99c1fe10d8b0684c43f051b5580"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Anahkiasen/underscore-php/zipball/2f979ca3480e1af047e3cfa0e73b00fa5b338900",
-                "reference": "2f979ca3480e1af047e3cfa0e73b00fa5b338900",
+                "url": "https://api.github.com/repos/Anahkiasen/underscore-php/zipball/48f97b295c82d99c1fe10d8b0684c43f051b5580",
+                "reference": "48f97b295c82d99c1fe10d8b0684c43f051b5580",
                 "shasum": ""
             },
             "require": {
@@ -27,13 +27,16 @@
                 "php": ">=5.4.0"
             },
             "require-dev": {
-                "fabpot/php-cs-fixer": "^1.10",
-                "phpunit/phpunit": "^4.8"
+                "fabpot/php-cs-fixer": "2.0.*@dev",
+                "phpunit/phpunit": "^4.6"
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Underscore\\": "src"
+                    "Underscore\\": [
+                        "src",
+                        "tests"
+                    ]
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -52,7 +55,7 @@
                 "laravel",
                 "toolkit"
             ],
-            "time": "2015-12-21 09:20:38"
+            "time": "2015-05-16 19:24:58"
         },
         {
             "name": "aws/aws-sdk-php",
@@ -2253,7 +2256,6 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "anahkiasen/underscore-php": 20,
         "bjyoungblood/bjy-profiler": 20
     },
     "prefer-stable": false,
