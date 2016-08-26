@@ -13,9 +13,11 @@ return array(
         'config_glob_paths' => array(),
     ),
     'db' => array(
-        'driver' => 'Pdo_Sqlite',
-        'database' => \Chiquitto\Soul\PATH_TMP . '/data.sqlite.db',
-        'dsn' => 'sqlite:' . \Chiquitto\Soul\PATH_TMP . '/data.sqlite.db',
+        'default' => [
+            'driver' => 'Pdo_Sqlite',
+            'database' => \Chiquitto\Soul\PATH_TMP . '/data.sqlite.db',
+            'dsn' => 'sqlite:' . \Chiquitto\Soul\PATH_TMP . '/data.sqlite.db',
+        ]
     ),
     'factories' => array(
         'Zend\Db\Adapter\Adapter' => 'Chiquitto\Soul\Db\Adapter\AdapterFactory',

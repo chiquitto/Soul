@@ -39,7 +39,7 @@ class TestCase extends PHPUnit_Framework_TestCase
 
     private function dropDatabase()
     {
-        $file = ServiceLocatorFactory::getConfiguration()['db']['database'];
+        $file = ServiceLocatorFactory::getConfiguration()['db']['default']['database'];
         if (is_file($file)) {
             unlink($file);
         }
