@@ -14,6 +14,6 @@ class AdapterWriteFactory extends AdapterFactory
 {
 
     protected $adapterClass = AdapterWrite::class;
-    protected $profilingAdapterClass = null;
+    protected $profilingAdapterClass = ProfilingAdapterWrite::class;
 
 }

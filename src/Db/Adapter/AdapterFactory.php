@@ -35,11 +35,11 @@ class AdapterFactory implements FactoryInterface
 
         if (isset($config['db'][$requestedName]['dbprofiler'])) {
             return new $this->profilingAdapterClass($config['db'][$requestedName]);
-        } else {
-            // @codeCoverageIgnoreStart
-            return new $this->adapterClass($config['db'][$requestedName]);
-            // @codeCoverageIgnoreEnd
         }
+
+        // @codeCoverageIgnoreStart
+        return new $this->adapterClass($config['db'][$requestedName]);
+        // @codeCoverageIgnoreEnd
     }
 
     protected function invokeDefault(ContainerInterface $container, $requestedName, array $options = null)
