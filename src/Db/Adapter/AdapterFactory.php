@@ -23,10 +23,10 @@ class AdapterFactory implements FactoryInterface
     {
         $config = $container->get('Configuration');
         if (isset($config['db'][$requestedName])) {
-            return $this->invokeDefault($container, $requestedName, $options);
+            return $this->invoke($container, $requestedName, $options);
         }
 
-        return $this->invoke($container, 'default', $options);
+        return $this->invokeDefault($container, 'default', $options);
     }
 
     protected function invoke(ContainerInterface $container, $requestedName, array $options = null)
