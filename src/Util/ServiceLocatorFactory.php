@@ -19,7 +19,7 @@ class ServiceLocatorFactory {
     /**
      * @var ServiceManager
      */
-    private static $serviceManager = null;
+    protected static $serviceManager = null;
 
     /**
      * Disable constructor
